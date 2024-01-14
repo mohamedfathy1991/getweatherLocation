@@ -13,10 +13,17 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-lg-5">
-      <div class="container-fluid">
+      <div class=" container  ">
+       <div class="d-flex ">
         <a class="navbar-brand" href="#">
-            <img src="./logo.png" alt=" cloud">
-        </a>
+          <img  src="./logo.png" alt=" cloud">
+         
+      </a>
+      <div>
+        <p class="fw-bold m-0"> wheather</p>
+        <p class="text-white-50 m-0"> tagline goes here</p>
+      </div>
+       </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -26,20 +33,20 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon   "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
-            <li class="nav-item mx-md-4">
+          <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 pe-lg-5 ">
+            <li class="nav-item mx-lg-4">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item mx-md-4">
+            <li class="nav-item mx-lg-4">
               <a class="nav-link" href="#">news</a>
             </li>
-            <li class="nav-item mx-md-4">
+            <li class="nav-item mx-lg-4">
               <a class="nav-link" href="#">Live camera</a>
             </li>
-            <li class="nav-item mx-md-4">
+            <li class="nav-item mx-lg-4">
               <a class="nav-link" href="#">contacts</a>
             </li>
           </ul>
@@ -48,9 +55,11 @@
     </nav>
     <div class="home  pt-lg-5">
       <div class="container py-4">
-        <div  class="  d-flex bg-transparent ">
-          <input onkeyup="getweather(this.value)" type="text" placeholder="enter locsation" class=" w-100 rounded  border-0 form-control-lg p-lg-1 mx-2">
-          <button  onclick="getLocation()" id="searchbtn" class="btn btn-info" type="submit">find your location temp</button>
+        <div  class="  d-flex bg-transparent  position-relative ">
+          <input onkeyup="getweather(this.value)" type="text" placeholder="enter locsation" 
+          class=" w-100  inputsearch form-control-lg p-lg-3 position-relative bg-dark ">
+          <button  onclick="getLocation()" id="searchbtn" class="btn btn-info  px-4 py-2 "
+           type="submit">find</button>
 
 
         </div>
@@ -66,20 +75,22 @@
 
     <div class="weather-table  bg-black  ">
       <div class="container   py-1  ">
-        <div class="row  weather mb-4 ">
-          <div class="col-lg-4 bg-dark g-0  ">
+        <div class="row  weather mb-lg-4 ">
+          <div class="col-lg-4 col-md-6 bg-dark g-0  ">
             <div class="first">
-              <div class="d-flex justify-content-between bg-dark dates px-lg-2 mb-2">
+              <div class="d-flex justify-content-between bg-dark  px-lg-2 mb-2">
                 <p id="day"> Wednesday</p>
                 <p id="monthday"> 3march</p>
               </div>
-              <div class="temp mb-4">
+              <div class="temp mb-4  py-sm-4 d-md-block d-sm-flex justify-content-sm-around ">
                 
-                <p id="lcationname" class="my-2"></p>
-                <h1 id="temp-c" class="fw-bolder fs-1 degree mb-2"></h1>
+             
+                <p id="lcationname" class="my-lg-2"></p>
+                <h1 id="temp-c" class="fw-bolder fs-1 degree mb-lg-2"></h1>
                 <P class="fs-4" id="weather-condition">
                 </P>
                 <img id="imgageweather" alt="weather">
+             
 
 
               </div>
@@ -94,7 +105,7 @@
           
   
           </div>
-          <div class="col-lg-4 bg-dark g-0   ">
+          <div class="col-lg-4 col-md-6 bg-dark g-0   ">
             <div class="second flex-column  justify-content-start align-items-start text-center ">
               <div class=" text-center dates  bg-black px-lg-3">
                 <p class="next-day py-2 text-center"> Wednesday</p>
@@ -113,7 +124,7 @@
           
   
           </div>
-          <div class="col-lg-4 first g-0 ">
+          <div class="col-lg-4 col-md-6 first g-0 ">
             <div class="">
               <div class=" bg-dark dates px-lg-2">
                 <p class="next-day py-2 text-center"> Wednesday</p>
@@ -143,7 +154,7 @@
       <div class="container   mt-5 ">
         <div class=" d-flex justify-content-between">
           <div class="w-75 d-flex position-relative ">
-            <input type="text" placeholder="enter email" class="w-100 rounded " >
+            <input type="text" placeholder="enter email" class="w-100 rounded  " >
             <button id="email" type="submit"  class="btn btn-info   ">subscribe</button>
            </div>
            <div class="socila-icons  d-flex">
